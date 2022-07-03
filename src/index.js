@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+var ghpages = require('gh-pages');
+ghpages.publish('dist', function(err) {});
 
 function Square(props) {
   return (
